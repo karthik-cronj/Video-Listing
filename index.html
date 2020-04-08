@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Video Listing</title>
+  </head>
+
+  <body>
+    <nav id="navbar" class="navbar navbar-expand-sm navbar-dark bg-danger">
+      <div class="container">
+        <a href="index.html" class="navbar-brand text-dark"><i class="fas fa-video"></i></a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#collapsemenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="collapsemenu" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="#" class="nav-link" id="one">1</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" id="two">2</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" id="three">3</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+    <!-- title & search ||  filter & sort -->
+
+    <section id="header">
+      <div class="container text-center px-5">
+        <h1 class="display-4 pb-2"><i class="fas fa-video fa-2x"></i>  <span class="display-1"> V Play</span></h1>
+        <input type="text" class="d-block w-100 bg-secondary border-0 py-1" id="searchbar" placeholder="Search Here">
+        <div class="row p-3">
+          <div class="col-md-6 mb-res">
+            <label for="filter">Uploaded : </label>
+            <select id="filter" class="btn btn-outline-dark btn-sm btn-md-lg">
+              <option value="none">None</option>
+                 <option value="today">Today</option>
+                 <option value="week">This Week</option>
+                 <option value="month">This Month</option>
+                 <option value="year">This Year</option>
+           </select>
+          </div>
+
+          <div class="col-md-6 mb-res">
+            <label for="sort">Sort By : </label>
+            <select id="sort" class="btn btn-outline-dark btn-sm">
+              <option value="none">None</option>
+                 <option value="latest">Latest</option>
+                 <option value="name">Name</option>
+                 <option value="duration">Duration</option>                 
+           </select>
+          </div>
+        </div>
+        <button class="btn btn-lg btn-outline-danger text-center m-3" id="searchbtn">Search</button>
+      </div>
+    </section>
+
+
+    <!-- video collage -->
+
+    <section id="video-collage-1">
+      <div class="overlay">
+      <div class="container" id="mainarea">
+
+        <div id="page1" class="pb-4">
+
+        <div class="row py-5">
+          <div class="col-lg-4 mb-res2" >
+            <div class="videobox text-center m-auto" id="1">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ></a>
+            </div>
+            
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Tom and Jerry</h5></i
+              ></a>
+          </div>
+
+
+
+          <div class="col-lg-4 mb-res2">
+            <div class="videobox text-center m-auto" id="2">
+
+              
+
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                >
+                
+              </a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Spike and Tyke</h5></i
+              ></a>
+          </div>
+
+
+          <div class="col-lg-4 mb-res2">
+            <div class="videobox text-center m-auto" id="3">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ><i class="fas fa-play fa-3x text-danger"></i
+              ></a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Back to School</h5></i
+              ></a>
+          </div>
+
+          
+
+
+
+
+        </div>
+
+        <hr>
+
+
+
+
+        <div class="row py-5">
+          <div class="col-lg-3 mb-res2" >
+            <div class="videobox text-center m-auto" id="4">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ><i class="fas fa-play fa-3x text-danger"></i
+              ></a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Mr.Bean</h5></i
+              ></a>
+          </div>
+
+
+
+          <div class="col-lg-3 mb-res2">
+            <div class="videobox text-center m-auto" id="5">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ><i class="fas fa-play fa-3x text-danger"></i
+              ></a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Pink Panther</h5></i
+              ></a>
+          </div>
+
+
+          <div class="col-lg-3 mb-res2">
+            <div class="videobox text-center m-auto" id="6">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ><i class="fas fa-play fa-3x text-danger"></i
+              ></a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Popoye</h5></i
+              ></a>
+          </div>        
+
+        
+
+
+        <div class="col-lg-3 mb-res2">
+          <div class="videobox text-center m-auto" id="7">
+            <a
+              href="#"
+              data-toggle="modal"
+              data-target="#video-modal"
+              class="video"
+              
+              ><i class="fas fa-play fa-3x text-danger"></i
+            ></a>
+          </div>
+
+          <a
+              href="#"
+              data-toggle="modal"
+              data-target="#video-modal"
+              class="video text-center"
+              
+              ><h5 class="video-heading">Popoye vs Pluto</h5></i
+            ></a>
+        </div>        
+
+      </div>
+
+      <hr>
+
+
+
+
+
+        <div class="row py-5">
+          <div class="col-lg-4 mb-res2" >
+            <div class="videobox text-center m-auto" id="8">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ><i class="fas fa-play fa-3x text-danger"></i
+              ></a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Oswald</h5></i
+              ></a>
+          </div>
+
+
+
+          <div class="col-lg-4 mb-res2">
+            <div class="videobox text-center m-auto" id="9">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ><i class="fas fa-play fa-3x text-danger"></i
+              ></a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Bob the Builder</h5></i
+              ></a>
+          </div>
+
+
+          <div class="col-lg-4 mb-res2">
+            <div class="videobox text-center m-auto" id="10">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ><i class="fas fa-play fa-3x text-danger"></i
+              ></a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Peppa Pig</h5></i
+              ></a>
+          </div>
+        </div>
+
+
+      </div>  
+
+
+      <div id="page2" class="pb-4">
+
+        <div class="row py-5">
+          <div class="col-lg-4 mb-res2" >
+            <div class="videobox text-center m-auto" id="11">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ></a>
+            </div>
+            
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Ben 10</h5></i
+              ></a>
+          </div>
+
+
+
+          <div class="col-lg-4 mb-res2">
+            <div class="videobox text-center m-auto" id="12">
+
+              
+
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                >
+                
+              </a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Richie Rich</h5></i
+              ></a>
+          </div>
+
+
+          <div class="col-lg-4 mb-res2">
+            <div class="videobox text-center m-auto" id="13">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ><i class="fas fa-play fa-3x text-danger"></i
+              ></a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Pink Panther Da Vinci</h5></i
+              ></a>
+          </div>
+
+          
+
+
+
+
+        </div>
+
+        <hr>
+
+
+
+
+        <div class="row py-5">
+          <div class="col-lg-3 mb-res2" >
+            <div class="videobox text-center m-auto" id="14">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ><i class="fas fa-play fa-3x text-danger"></i
+              ></a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Pink Panther Package</h5></i
+              ></a>
+          </div>
+
+
+
+          <div class="col-lg-3 mb-res2">
+            <div class="videobox text-center m-auto" id="15">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ><i class="fas fa-play fa-3x text-danger"></i
+              ></a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Peppa Pig</h5></i
+              ></a>
+          </div>
+
+
+          <div class="col-lg-3 mb-res2">
+            <div class="videobox text-center m-auto" id="16">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ><i class="fas fa-play fa-3x text-danger"></i
+              ></a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Teen Titans</h5></i
+              ></a>
+          </div>        
+
+        
+
+
+        <div class="col-lg-3 mb-res2">
+          <div class="videobox text-center m-auto" id="17">
+            <a
+              href="#"
+              data-toggle="modal"
+              data-target="#video-modal"
+              class="video"
+              
+              ><i class="fas fa-play fa-3x text-danger"></i
+            ></a>
+          </div>
+
+          <a
+              href="#"
+              data-toggle="modal"
+              data-target="#video-modal"
+              class="video text-center"
+              
+              ><h5 class="video-heading">Oswald Octopus</h5></i
+            ></a>
+        </div>        
+
+      </div>
+
+      <hr>
+
+
+
+
+
+        <div class="row py-5">
+          <div class="col-lg-4 mb-res2" >
+            <div class="videobox text-center m-auto" id="18">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ><i class="fas fa-play fa-3x text-danger"></i
+              ></a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Peppa Pig part-3</h5></i
+              ></a>
+          </div>
+
+
+
+          <div class="col-lg-4 mb-res2">
+            <div class="videobox text-center m-auto" id="19">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ><i class="fas fa-play fa-3x text-danger"></i
+              ></a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Bob the Builder - 2</h5></i
+              ></a>
+          </div>
+
+
+          <div class="col-lg-4 mb-res2">
+            <div class="videobox text-center m-auto" id="20">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ><i class="fas fa-play fa-3x text-danger"></i
+              ></a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Richie Rich Part-2</h5></i
+              ></a>
+          </div>
+        </div>
+
+
+      </div> 
+      
+      
+      <!-- page - 3 -->
+
+
+
+      <div id="page3" class="pb-4">
+
+        <div class="row py-5">
+          <div class="col-lg-4 mb-res2" >
+            <div class="videobox text-center m-auto" id="21">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ></a>
+            </div>
+            
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Penguin Show</h5></i
+              ></a>
+          </div>
+
+
+
+          <div class="col-lg-4 mb-res2">
+            <div class="videobox text-center m-auto" id="22">
+
+              
+
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                >
+                
+              </a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Tele Tubbies</h5></i
+              ></a>
+          </div>
+
+
+          <div class="col-lg-4 mb-res2">
+            <div class="videobox text-center m-auto" id="23">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ><i class="fas fa-play fa-3x text-danger"></i
+              ></a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Johny Bravo- 1</h5></i
+              ></a>
+          </div>
+
+          
+
+
+
+
+        </div>
+
+        <hr>
+
+
+
+
+        <div class="row py-5">
+          <div class="col-lg-3 mb-res2" >
+            <div class="videobox text-center m-auto" id="24">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ><i class="fas fa-play fa-3x text-danger"></i
+              ></a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Johny Bravo- 2</h5></i
+              ></a>
+          </div>
+
+
+
+          <div class="col-lg-3 mb-res2">
+            <div class="videobox text-center m-auto" id="25">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ><i class="fas fa-play fa-3x text-danger"></i
+              ></a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Johny Bravo- 3</h5></i
+              ></a>
+          </div>
+
+
+          <div class="col-lg-3 mb-res2">
+            <div class="videobox text-center m-auto" id="26">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ><i class="fas fa-play fa-3x text-danger"></i
+              ></a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Stuart Little</h5></i
+              ></a>
+          </div>        
+
+        
+
+
+        <div class="col-lg-3 mb-res2">
+          <div class="videobox text-center m-auto" id="27">
+            <a
+              href="#"
+              data-toggle="modal"
+              data-target="#video-modal"
+              class="video"
+              
+              ><i class="fas fa-play fa-3x text-danger"></i
+            ></a>
+          </div>
+
+          <a
+              href="#"
+              data-toggle="modal"
+              data-target="#video-modal"
+              class="video text-center"
+              
+              ><h5 class="video-heading">Justice League</h5></i
+            ></a>
+        </div>        
+
+      </div>
+
+      <hr>
+
+
+
+
+
+        <div class="row py-5">
+          <div class="col-lg-4 mb-res2" >
+            <div class="videobox text-center m-auto" id="28">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ><i class="fas fa-play fa-3x text-danger"></i
+              ></a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Swat Cats</h5></i
+              ></a>
+          </div>
+
+
+
+          <div class="col-lg-4 mb-res2">
+            <div class="videobox text-center m-auto" id="29">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ><i class="fas fa-play fa-3x text-danger"></i
+              ></a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Popoye Sailorman</h5></i
+              ></a>
+          </div>
+
+
+          <div class="col-lg-4 mb-res2">
+            <div class="videobox text-center m-auto" id="30">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video"
+                
+                ><i class="fas fa-play fa-3x text-danger"></i
+              ></a>
+            </div>
+
+            <a
+                href="#"
+                data-toggle="modal"
+                data-target="#video-modal"
+                class="video text-center"
+                
+                ><h5 class="video-heading">Spider-Man</h5></i
+              ></a>
+          </div>
+        </div>
+
+
+      </div>  
+
+
+
+      </div>
+
+    </div>
+   </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- video modal -->
+<section id="videomod">
+    <div class="modal fade" id="video-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+            <iframe src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+
+
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
