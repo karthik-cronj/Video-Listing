@@ -72,6 +72,10 @@ function init() {
       document
         .getElementById(`${element.id}`)
         .firstElementChild.setAttribute('data-video', tempurl);
+      
+      document
+        .getElementById(`${element.id}`)
+        .parentElement.lastElementChild.setAttribute('data-video', tempurl);
 
       document.getElementById(
         `${element.id}`
